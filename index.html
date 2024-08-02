@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>F1 Results</title>
+        <link rel="icon" type="image/x-icon" href="img/logo.png">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo" width="30" height="30"
+                    class="d-inline-block align-top">
+                F1 Results
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top-constructors">Top
+                            Constructors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#race">Race Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#results">Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#standings">standings</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="background-image">
+            <div class="container mt-5">
+                <h1 class="mt-5">Top 4 F1 Constructors</h1>
+                <div id="top-constructors" class="card-container"></div>
+
+                <h1 class="mt-5" id="race">Race Information</h1>
+                <div id="race-info" class="card-container">
+                    <div id="last-circuit" class="circuit-card">
+                        <h2>Last Circuit</h2>
+                        <div class="circuit-info">
+                            <img id="last-circuit-image" src
+                                alt="Last Circuit Image">
+                            <span id="last-circuit-name"></span>
+                        </div>
+                    </div>
+
+                    <div id="next-race-circuit" class="circuit-card">
+                        <h2>Next Race Circuit</h2>
+                        <div class="circuit-info">
+                            <img id="next-race-circuit-image" src
+                                alt="Next Race Circuit Image">
+                            <span id="next-race-circuit-name"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Latest Race Results</h1>
+                <div class="scrollable-results-container">
+                    <ul id="results" class="list-group"></ul>
+                </div>
+
+                <h1>Current Standings</h1>
+                <div class="scrollable-results-container">
+                    
+                    <div id="standings" class="list-group"></div>
+                </div>
+                
+            </div>
+        </div>
+
+        <footer class="footer mt-auto py-3 bg-light">
+            <div class="container">
+                <span class="text-muted">&copy; 2024 F1 Results @AdRohal</span>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

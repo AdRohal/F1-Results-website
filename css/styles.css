@@ -1,0 +1,282 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    padding-top: 0;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.background-image {
+    position: relative;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.background-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Adjust the blur level as needed */
+    z-index: -1;
+}
+
+.background-image h1 {
+    color: #fff;
+}
+
+.list-group-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 10px;
+}
+
+.driver-info {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.driver-info img {
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.driver-info span {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.scrollable-results-container, .scrollable-standings-container {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    color: black;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    position: relative;
+    width: 240px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-bg {
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.card-info h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-info p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.circuits-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.circuit-card {
+    width: 45%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circuit-card h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.circuit-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circuit-info img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.circuit-info span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.standings-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.standings-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.scrollable-standings-container {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.standing-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+}
+
+.standing-item img {
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.standing-item .details {
+    flex-grow: 1;
+}
+
+.standing-item .details h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+
+.standing-item .details p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: black;
+}
+
+.h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.background-image h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#race {
+    margin-top: 5rem;
+}
+
+.circuit-card {
+    width: 45%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circuit-card h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.circuit-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circuit-info img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.circuit-info span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
